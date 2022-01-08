@@ -1,0 +1,235 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header {
+  z-index: 100000;
+  background: black;
+  color: white;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.header .title {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  margin-bottom: 0;
+}
+
+.header .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 26%;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.header .list .list-text {
+  text-decoration: none;
+  color: white;
+}
+
+.header .icon-container {
+  width: 13%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.header .icon-container .icon {
+  width: 20%;
+}
+
+.carousel-control-prev {
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  margin-left: 20px !important;
+}
+
+.carousel-control-prev .slide-btn {
+  background-image: none !important;
+}
+
+.carousel-control-prev .slide-btn .btn-style {
+  font-size: 50px;
+  color: black;
+}
+
+.carousel-control-next {
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: flex-start !important;
+  margin-right: 20px !important;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.carousel-control-next .slide-btn-next {
+  background-image: none !important;
+}
+
+.carousel-control-next .slide-btn-next .btn-style-next {
+  font-size: 50px;
+  color: black;
+}
+
+.web-descript {
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 40px;
+  color: #6d6e71;
+  font-size: 17px;
+}
+
+.web-descript .descript-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 15px;
+  color: #414042;
+  font-size: 25px;
+}
+
+.product-list {
+  margin: 0 auto;
+  width: 85%;
+  color: #414042;
+}
+
+.product-list .product-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #414042;
+  font-size: 28px;
+}
+
+.product-list .list-wrapper {
+  padding: 0;
+}
+
+.product-list .list-wrapper .click-product {
+  color: #414042;
+  text-decoration: none;
+}
+
+.product-list .list-wrapper .click-product .product-type {
+  width: 100%;
+  border-bottom: solid 1px #6d6e71;
+  font-size: 20px;
+  padding-left: 25px;
+  margin-bottom: 15px;
+  padding-bottom: 3px;
+}
+
+.footer-wrap {
+  width: 100%;
+  background-color: black;
+  color: white;
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 7%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-wrap .social-media .media-click {
+  text-decoration: none;
+  font-size: 35px;
+  color: #c0c0c0;
+  margin-right: 20px;
+}
+
+.footer-wrap .footer-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 0;
+  width: 35%;
+}
+
+.footer-wrap .footer-list .footer-list-click {
+  color: white;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
