@@ -89,6 +89,20 @@
 }
 //////website description end/////////////
 
+////////////website cart product list start//////////
+.products{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .product-img{
+        width: 200px;
+    }
+}
+
+////////////website cart product list start//////////
+
+
+
 ///////product list start/////////
 .product-list{
     margin: 0 auto;
