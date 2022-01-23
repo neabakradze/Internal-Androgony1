@@ -25,7 +25,15 @@
         <div class="icon-container">
             <img src="images/lang.png" alt="" class="icon">
             <img src="images/search.png" alt="" class="icon">
-            <img src="images/cart.png" alt="" class="icon">
+            <div class="cart">
+                <a href="cart.html">
+                    <img style="width: 50px;" src="images/cart.png" alt="" class="cart-img">
+                    <span class="cartNum ">0</span>
+
+                </a>
+
+            </div>
+
         </div>
     </header>
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -64,37 +72,40 @@
             Try a coffee table book, original glassware or a set of coasters. </p>
     </section>
     <!-- /////////////cart///////////// -->
-    <div class="cart">
-        <div style="background-color: black; color: white;" class="img-wrap">
-            <img style="width: 50px;" src="images/cart.png" alt="" class="cart-img">
-            <span class="cartNum">0</span>
-        </div>
-        <div class="products">
 
-        </div>
-    </div>
     <!-- /////////////////cart products/////////////// -->
-    <div style="display: flex;" class="container">
-        <div class="image">
-            <img style="width: 300px;" src="images/bed1.png" alt="">
-            <h3>bed1</h3>
-            <h3>1000$</h3>
-            <button data-id="bed1" class="addToCart">add to cart</button>
-        </div>
-        <div class="image">
-            <img style="width: 300px;" src="images/bed2.png" alt="">
-            <h3>bed2</h3>
-            <h3>1200$</h3>
-            <button data-id="bed2" class="addToCart">add to cart</button>
-        </div>
-        <div class="image">
-            <img style="width: 300px;" src="images/bed3.png" alt="">
-            <h3>bed3</h3>
-            <h3>1500$</h3>
+    <section class='product-wrapper'>
+        <div class="product-container">
+            <div class="seperate-product">
+                <img class="image" src="images/sofas/sofa3.jpg" alt="">
+                <h3 class="name">sofa</h3>
+                <h3 class="price">1600$</h3>
+                <button data-id="sofa3" class="addToCart">add to cart</button>
+            </div>
+            <div class="seperate-product">
+                <img class="image" src="images/beds/bed2.png" alt="">
+                <h3 class="name">bed1</h3>
+                <h3 class="price">1000$</h3>
+                <button data-id="bed1" class="addToCart">add to cart</button>
+            </div>
+            <div class="seperate-product">
+                <img class="image" src="images/desks/desk3.jpg" alt="">
+                <h3 class="name">desks</h3>
+                <h3 class="price">1600$</h3>
 
-            <button data-id="bed3" class="addToCart">add to cart</button>
+                <button data-id="desk3" class="addToCart">add to cart</button>
+            </div>
+
+            <div class="seperate-product">
+                <img class="image" src="images/chairs/chair3.jpg" alt="">
+                <h3 class="name">chair dcjscs</h3>
+                <h3 class="price">1600$</h3>
+
+                <button data-id="chair3" class="addToCart">add to cart</button>
+            </div>
         </div>
-    </div>
+    </section>
+
 
     <article class="product-list">
         <h2 class="product-title"> Our Products</h2>

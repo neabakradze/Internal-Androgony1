@@ -12,6 +12,10 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    @media (max-width:900px) {
+        justify-content: flex-start;
+        padding-left: 5%;
+       }
     .title{
         color: white;
         text-decoration: none;
@@ -27,6 +31,12 @@
         width: 26%;
         font-size: 18px;
         margin-bottom: 0;
+        @media (max-width:1200px) {
+            width: 36%;
+        }
+        @media (max-width:900px) {
+            display: none;
+           }
         .list-text{
             text-decoration: none;
             color: white;
@@ -34,10 +44,27 @@
     }
     .icon-container{
         width: 13%;
-    display: flex;
-    justify-content: space-around;
+        display: flex;
+        justify-content: space-around;
+        @media (max-width:1300px) {
+            width: 18%;
+        }
+        @media (max-width:900px) {
+         display: none;
+        }
     .icon{
-      width: 20%;
+      width: 50px;
+      @media (max-width:950px) {
+        width: 46px;
+    }
+    }
+    .cart{
+        display: flex;
+    align-items: center;
+    .cart-img{
+        width: 40px; 
+    }
+
     }
     }
 }
@@ -76,8 +103,10 @@
     margin: 0 auto;
     margin-top: 40px;
     color: #6d6e71;
-
     font-size: 17px;
+    @media (max-width:800px) {
+        font-size: 15px;
+    }
 
     .descript-title{
         display: flex;
@@ -85,6 +114,9 @@
         margin-bottom: 15px;
         color: #414042;
         font-size: 25px;
+        @media (max-width:800px) {
+            font-size: 22px;
+        }
     }
 }
 //////website description end/////////////
@@ -97,11 +129,70 @@
     .product-img{
         width: 200px;
     }
+    .delete-btn{
+    font-size: 40px;
+    }
 }
 
 ////////////website cart product list start//////////
 
+///////////////products you can add to cart start
+.product-wrapper{
+    margin: 50px 0;
+    padding: 30px 0;
+    border-bottom: 1px solid;
+    border-top: solid 1px;
+    .product-container{
+        display: flex;
+        justify-content: space-between;
+        max-width: 90%;
+        padding: 0 30px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        @media (max-width:600px) {
+         justify-content: center;
+          
+        }
+        .seperate-product{
+            width: 20%;
+            @media (max-width:900px) {
+                width: 40%;
+                margin: 20px 0 20px 0;
+            }
+            @media (max-width:600px) {
+                width: 60%;
+                margin: 20px;
+              
+            }
+            .image{
+                width: 100%;
+            }
+            .name{
+                font-size: 25px;
+                margin-top: 10px;
+                margin-bottom: 7px;
+                @media (max-width:900px) {
+                    font-size: 22px;
+                }
+            }
+            .price{
+                font-size: 18px;
+                margin-bottom: 15px;
+            }
+            .addToCart{
+                border: 1.5px solid;
+                background: none;
+                font-size: 15px;
+                width: 125px;
+                height: 33px;
+            }
 
+        }
+       
+    }
+}
+
+///////////////products you can add to cart end
 
 ///////product list start/////////
 .product-list{
@@ -113,6 +204,10 @@
         justify-content: center;
         color: #414042;
         font-size: 28px;
+        @media (max-width:550px) {
+   
+            font-size: 25px;
+          }
     }
     .list-wrapper{
         padding: 0 ;
@@ -144,11 +239,19 @@
   padding: 0 7%;
   align-items: center;
   .social-media{
+    @media (max-width:550px) {
+      display: flex;
+
+    }
 .media-click{
     text-decoration: none;
     font-size: 35px;
     color: #c0c0c0;
     margin-right: 20px;
+    @media (max-width:550px) {
+   
+        font-size: 25px;
+      }
 }
   }
   .footer-list{
@@ -157,6 +260,13 @@
     justify-content: space-between;
     margin-bottom: 0;
     width: 35%;
+    @media (max-width:870px) {
+        width: 60%;
+    }
+    @media (max-width:500px) {
+        width: 80%;
+        font-size: 15px;
+    }
     .footer-list-click{
         color: white;
         text-decoration: none;
