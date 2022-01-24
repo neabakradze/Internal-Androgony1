@@ -183,6 +183,10 @@ table {
   }
 }
 
+.header .responsive-header {
+  display: none;
+}
+
 @media (max-width: 700px) {
   .main-slider {
     display: none;
