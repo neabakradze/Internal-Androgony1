@@ -1,0 +1,161 @@
+::-webkit-scrollbar {
+    display: none;
+    }
+////////////website cart product list start//////////
+.cart{
+    width: 85%;
+    margin: 0 auto;
+    display: none;
+    justify-content: space-between;
+    @media (max-width:1000px) {
+       flex-wrap: wrap;
+    }
+    .clear-all{
+    margin-top: 15px;
+    @include  BtnStyle;
+    }
+    .products-wrap{
+        width: 55%;
+        @media (max-width:1000px) {
+            width: 100%;
+            margin: 0 auto;
+         }
+        .products{
+            height: 77vh;
+            overflow-y: scroll;
+            .product-descript{
+                width: 100%;
+                @include displayStyle (initial);
+                border: 1px grey solid;
+                border-left: none;
+                border-right: none;
+                padding: 10px 0;
+                .product-img{
+                    width: 200px;
+                }
+                .divide{
+                    width: 70%;
+                    .product-name{
+                        display: none;
+                    }
+                    .prodName{
+                        font-size: 21px;
+                        margin: 20px 0 10px 10px;
+                    }
+                    .product-price{
+                        font-size: 17px;
+                        margin: 10px;
+                    }
+                }
+               
+                .cart-product-wrapper{
+                    @include displayStyle (space-between);
+                    margin-left: 10px;
+                    margin-top: 185px;
+                    width: 100%;
+                    @media (max-width:1450px) {
+                        width: 85%;
+                        margin-left: 20px;
+                    }
+                    @media (max-width:550px) {
+                            margin-top: 140px;
+                            display: block;
+                    }
+                    .remove-quantity-btns{
+                        @include displayStyle (initial);
+                        @media (max-width:550px) {
+                            display: inline;
+                            margin-bottom: 10px;
+                        }
+                        .delete-btn{
+                            cursor: pointer;
+                            @media (max-width:550px) {
+                                margin: 10px 0;
+                            }
+                          
+                        }
+                          .incartBtn{
+                            @include displayStyle (initial);
+                            .increase{
+                                font-size: 20px;
+                                margin-right: 20px;
+                                @media (max-width:550px) {
+                                  font-size: 17px;
+                                }
+                            }
+                            .decrease{
+                                font-size: 20px;
+                                @media (max-width:550px) {
+                                    font-size: 17px;
+                                  }
+                            }
+                            .product-quantity{
+                                font-size: 18px;
+                                margin: 0 8px;
+                                @media (max-width:550px) {
+                                    font-size: 17px;
+                                  }
+                            }
+                          }
+                    }
+                   
+                }
+               
+            }
+          
+        }
+    }
+    .payment-container{
+        width: 35%;
+        @media (max-width:1000px) {
+        margin: 0 auto;
+         }
+         @media (max-width:900px) {
+          width: 100%;
+        }
+
+        .total-price{
+            @include displayStyle (center);
+            margin-top: 25%;
+            @media (max-width:900px) {
+              margin-top: 10%;
+              }
+      
+        }
+        .check-out{
+            @include displayStyle (center);
+            margin: 0 auto;
+            width: 230px;
+            height: 35px;
+            border: black solid;
+            color: white;
+            background: black;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .display{
+        @include displayStyle (center);
+          margin: 0 auto;
+          margin-bottom: 7px;
+        }
+    }
+
+}
+.showcart{
+  display: flex ;
+
+}
+
+
+///////////empty cart
+.empty-cart{
+    height: 72.6vh;
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 38px;
+    .empty-cart-text{
+        @include displayStyle (center);
+    }
+}
+////////////website cart product list start//////////

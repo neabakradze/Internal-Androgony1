@@ -12,7 +12,7 @@
 
 <body>
     <header class="header">
-        <a class="title" href="">
+        <a class="title" href="index.html">
             <h3 class="title">INTERNAL ANDROGONY</h3>
         </a>
 
@@ -23,10 +23,12 @@
         </ul>
 
         <div class="icon-container">
-            <img src="images/lang.png" alt="" class="icon">
+            <a class="heart-icon" href="fave-products.html">
+                <i class="far fa-heart"></i>
+            </a>
             <img src="images/search.png" alt="" class="icon">
             <div class="cart">
-                <a href="cart.html">
+                <a class="cart-a" href="cart.html">
                     <img style="width: 50px;" src="images/cart.png" alt="" class="cart-img">
                     <span class="cartNum ">0</span>
 
@@ -39,6 +41,15 @@
 
 
         <div class="responsive-header">
+            <div class="responsive-contant">
+                <i class="fas fa-times close-btn"></i>
+                <ul class="resp-list">
+                    <li class="list-wrap"> <a class="list-a" href="">HOME</a> </li>
+                    <li class="list-wrap"> <a class="list-a" href="">PRODUCTS</a> </li>
+                    <li class="list-wrap"> <a class="list-a" href="">CONTACT</a> </li>
+                    <li class="list-wrap"> <a class="list-a" href="cart.html">CART</a> </li>
+                </ul>
+            </div>
 
         </div>
     </header>
@@ -126,30 +137,40 @@
         <div class="product-container">
             <div class="seperate-product">
                 <img class="image" src="images/sofas/sofa3.jpg" alt="">
-                <h3 class="name">sofa</h3>
+                <h3 class="name">Blue Flower Print Sofa</h3>
                 <h3 class="price">1600$</h3>
-                <button data-id="sofa3" class="addToCart">add to cart</button>
+                <div class="btn-wrapper">
+                    <button data-id="sofa3" class="addToCart">add to cart</button>
+                    <i class="fas fa-heart heart-icon"></i>
+                </div>
             </div>
             <div class="seperate-product">
                 <img class="image" src="images/beds/bed2.png" alt="">
-                <h3 class="name">bed1</h3>
+                <h3 class="name">Black Headboard Bed</h3>
                 <h3 class="price">1000$</h3>
-                <button data-id="bed1" class="addToCart">add to cart</button>
+                <div class="btn-wrapper">
+                    <button data-id="bed1" class="addToCart">add to cart</button>
+                    <i data-id="bed1" class="fas fa-heart heart-icon"></i>
+                </div>
             </div>
             <div class="seperate-product">
                 <img class="image" src="images/desks/desk3.jpg" alt="">
-                <h3 class="name">desks</h3>
+                <h3 class="name">Classical Wood Desk</h3>
                 <h3 class="price">1600$</h3>
-
-                <button data-id="desk3" class="addToCart">add to cart</button>
+                <div class="btn-wrapper">
+                    <button data-id="desk3" class="addToCart">add to cart</button>
+                    <i data-id="desk3" class="fas fa-heart heart-icon"></i>
+                </div>
             </div>
 
             <div class="seperate-product">
                 <img class="image" src="images/chairs/chair3.jpg" alt="">
-                <h3 class="name">chair dcjscs</h3>
+                <h3 class="name">Floral Green Chair</h3>
                 <h3 class="price">1600$</h3>
-
-                <button data-id="chair3" class="addToCart">add to cart</button>
+                <div class="btn-wrapper">
+                    <button data-id="chair3" class="addToCart">add to cart</button>
+                    <i data-id="chair3" class="fas fa-heart heart-icon"></i>
+                </div>
             </div>
         </div>
     </section>
@@ -212,6 +233,7 @@
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/9fceb31bc9.js" crossorigin="anonymous"></script>
     <script src="app.js"></script>
+    <script src="products.js"></script>
 </body>
 
 </html>

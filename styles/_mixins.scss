@@ -1,0 +1,12 @@
+@mixin displayStyle ($justifyParameter) {
+    display: flex;
+    align-items: center;
+    justify-content: $justifyParameter;
+}
+@mixin BtnStyle {
+    border: 1.5px solid;
+    background: none;
+    font-size: 15px;
+    width: 125px;
+    height: 33px
+}
